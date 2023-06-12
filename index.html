@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meal For Your Ingredient</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="meal_container">
+            <div class="search">
+                <h2>Find Meals for your ingredients</h2>
+                <blockquote>"Unlock the Magic of Your Kitchen: Where Ingredients Transform into Extraordinary Meals."</blockquote>
+                <div class="search_box">
+                   <input type="text" class="control" placeholder="Enter your ingredient" id="input"/>
+                   <button type="submit" class="search_btn btn" id="search" title="Search">
+                    <i class="fas fa-search"></i>
+                   </button>
+                </div>
+            </div>
+            <div class="result">
+                <h2 class="txt">Your search result:</h2>
+                <div id="meal">
+                </div>
+                <div class="meal_details">
+                    <button type="button" class="btn close_btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="meal_details_content">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
